@@ -1,0 +1,119 @@
+/* 4 - External CSS */
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
+}
+
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+    font-size: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 3px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 4px solid green;
+}
+
+.color-name {
+    color: crimson;
+}
+
+.hex {
+    color: #55a398;
+}
+
+.hex-2 {
+    color: #55a276;
+}
+
+.simple-hex {
+    color: #333;
+}
+
+.simple-hex-2 {
+    color: #A5F;
+}
+
+.rgb{
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb{
+    color: rgb(199, 21, 47);
+}
+
+.rgba {
+    color: rgba(100, 199, 45, 0.3);
+}
+
+.hsl {
+    color: hsl(100, 20%, 50%);
+}
+
+.hsl-2 {
+    color: hsl(201, 44%, 69%);
+}
+
+.bg {
+    background-color: #000;
+    color: #55a398;
+}
+
+.bg-2 {
+    background-color: rgb(200, 20, 187);
+    color: #fff;
+}
+
+.bg-opacity {
+    background-color: green;
+    opacity: .2;
+}
+
+.bg-opacity-2 {
+    background-color: rgb(20, 32, 110);
+    color: #333;
+    opacity: .8;
+}
+
+.rgba-opacity {
+    background-color: rgba(45, 137, 199, 0.2);
+    color: #000;
+}
+
+.bg-image {
+    background-image: url("../img/nature.jpg");
+    padding: 10px;
+    color: #fff;
+}
+
+.not-centered-bg, 
+.centered-bg {
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/bridge.jpg");
+    padding: 10px;
+    
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
