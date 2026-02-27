@@ -1,0 +1,192 @@
+// // 1 - métodos
+// const animal = {
+//     nome: "Bob",
+//     latir: function () {
+//         console.log("Au Au");
+//     },
+// };
+
+// console.log(animal.nome);
+
+// animal.latir();
+
+// // 2 - mais sobre métodos
+// const pessoa = {
+//     nome: "Pedro",
+
+//     getNome: function () {
+//         return this.nome;
+//     },
+
+//     setNome: function (novoNome) {
+//         this.nome = novoNome;
+//     },
+// };
+
+// console.log(pessoa.nome);
+
+// console.log(pessoa.getNome());
+
+// pessoa.setNome("Musquito");
+
+// console.log(pessoa.getNome());
+
+// // 3 - prototype
+// const text = "adsa";
+
+// console.log(Object.getPrototypeOf(text));
+
+// const bool = true;
+
+// console.log(Object.getPrototypeOf(bool));
+
+// const arr = [];
+
+// console.log(arr.length);
+
+// console.log(Object.getPrototypeOf(arr));
+
+// console.log(Object.getPrototypeOf(arr) === Array.prototype);
+
+// // 4 - mais sobre prototype
+// const myObject = {
+//     a: "b",
+// };
+
+// console.log(Object.getPrototypeOf(myObject));
+
+// console.log(Object.getPrototypeOf(myObject) === Object.prototype);
+
+// const mySecondObject = Object.create(myObject);
+
+// console.log(mySecondObject);
+
+// console.log(mySecondObject.a);
+
+// console.log(Object.getPrototypeOf(mySecondObject) === myObject);
+
+// 5 - classes básicas
+// const cachorro = {
+//     raca: null,
+//     patas: 4,
+// };
+
+// const pastorAlemao = Object.create(cachorro);
+
+// pastorAlemao.raca = "Pastor Alemão";
+
+// console.log(pastorAlemao);
+
+// console.log(pastorAlemao.patas);
+
+// const bulldog = Object.create(cachorro);
+
+// bulldog.raca = "Bulldog";
+
+// console.log(bulldog);
+
+// // 6 - funções construtoras
+// function criarCachorro (nome, raca) {
+//     const cachorro = Object.create({});
+
+//     cachorro.nome = nome;
+//     cachorro.raca = raca;
+
+//     return cachorro;
+// };
+
+// const bob = criarCachorro("Bob", "Vira lata");
+
+// console.log(bob);
+
+// const theo = criarCachorro("Theo", "Yorkshitzu");
+
+// console.log(theo);
+
+// console.log(typeof theo);
+
+// // 7 - funcoes como classe
+// function Cachorro(nome, raca) {
+//     this.nome = nome
+//     this.raca = raca
+// }
+
+// const husky = new Cachorro("Bel", "Husky");
+
+// console.log(husky);
+
+// // 8 - metodos na funcao construtora
+// Cachorro.prototype.uivar = function () {
+//     console.log("Auuuuuu");
+// };
+
+// console.log(Cachorro.prototype);
+
+// husky.uivar();
+
+// // 9 - classes es6
+// class CachorroClasse {
+//     constructor(nome, raca) {
+//         this.nome = nome;
+//         this.raca = raca;
+//     }
+// };
+
+// const jeff = new CachorroClasse("Jeff", "Labrador");
+
+// console.log(jeff);
+
+// console.log(Object.getPrototypeOf(jeff));
+
+// // 10 - mais sobre classes
+// class Caminhao {
+//     constructor(eixos, cor) {
+//         this.eixos = eixos;
+//         this.cor = cor;
+//     }
+
+//     descreverCaminhao() {
+//         console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}.`)
+//     }
+// };
+
+// const scania = new Caminhao(6, "Vermelha");
+
+// console.log(scania);
+
+// scania.descreverCaminhao();
+
+// Caminhao.motor = 4;
+
+// const c2 = new Caminhao(4, "Preta");
+
+// console.log(c2);
+
+// console.log(c2.motor);
+
+// Caminhao.prototype.motor = 4.0;
+// const c3 = new Caminhao(6, "Azul");
+
+// console.log(c3.motor);
+
+// // 11 - override
+// class Humano{
+//     constructor(nome, idade) {
+//         this.nome = nome;
+//         this.idade = idade;
+//     }
+// };
+
+// const pedro = new Humano("Pedro", 20);
+
+// console.log(pedro);
+
+// console.log(Humano.prototype.idade);
+
+// Humano.prototype.idade = "Não definida";
+
+// console.log(pedro.idade);
+
+// console.log(Humano.prototype.idade);
+
+// 12 - symbols
