@@ -1,0 +1,26 @@
+body {
+    font-family: Verdana;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h2 {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    color: #181818;
+}
+
+h3 {
+    color: #282828;
+}
+
+#user-container div {
+    background-color: #ccc;
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: .5rem;
+}
