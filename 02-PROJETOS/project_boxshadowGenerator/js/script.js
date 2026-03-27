@@ -18,23 +18,24 @@ class BoxShadowGenerator {
         webkitRule,
         mozRule
     ) {
-        this.horizontal = horizontal
-        this.horizontalRef = horizontalRef
-        this.vertical = vertical
-        this.verticalRef = verticalRef
-        this.blur = blur
-        this.blurRef = blurRef
-        this.spread = spread
-        this.spreadRef = spreadRef
-        this.color = color
-        this.colorRef = colorRef
-        this.opacity = opacity
-        this.opacityRef = opacityRef
-        this.inset = inset
-        this.previewBox = previewBox
-        this.rule = rule
-        this.webkitRule = webkitRule
-        this.mozRule = mozRule
+        this.horizontal = horizontal;
+        this.horizontalRef = horizontalRef;
+        this.vertical = vertical;
+        this.verticalRef = verticalRef;
+        this.blur = blur;
+        this.blurRef = blurRef;
+        this.spread = spread;
+        this.spreadRef = spreadRef;
+        this.color = color;
+        this.colorRef = colorRef;
+        this.opacity = opacity;
+        this.opacityRef = opacityRef;
+        this.inset = inset;
+        this.insetRef = inset.checked;
+        this.previewBox = previewBox;
+        this.rule = rule;
+        this.webkitRule = webkitRule;
+        this.mozRule = mozRule;
     }
 
     initialize() {
@@ -43,6 +44,7 @@ class BoxShadowGenerator {
         this.blurRef.value = this.blur.value;
         this.spreadRef.value = this.spread.value;
         this.colorRef.value = this.color.value;
+        this.opacityRef.value = this.opacity.value;
 
         this.applyRule();
         this.showRule();
@@ -51,7 +53,7 @@ class BoxShadowGenerator {
     applyRule() {
         const rgbValue = this.hexToRgb(this.colorRef.value);
 
-        const shadowRule = `${this.horizontalRef.value}px ${this.verticalRef.value}px ${this.blurRef.value}px ${this.spreadRef.value}px rgba(${rgbValue})`;
+        const shadowRule = `${this.insetRef ? "inset" : ""} ${this.horizontalRef.value}px ${this.verticalRef.value}px ${this.blurRef.value}px ${this.spreadRef.value}px rgba(${rgbValue}, ${this.opacityRef.value})`;
 
         this.previewBox.style.boxShadow = shadowRule;
         this.currentRule = shadowRule;
@@ -79,6 +81,12 @@ class BoxShadowGenerator {
                 break
             case "color":
                 this.colorRef.value = value;
+                break
+            case "opacity":
+                this.opacityRef.value = value;
+                break
+            case "inset":
+                this.insetRef = value;
                 break
         }
 
@@ -171,4 +179,16 @@ color.addEventListener("input", (e) => {
     const value = e.target.value;
 
     boxShadow.updateValue("color", value);
+});
+
+opacity.addEventListener("input", (e) => {
+    const value = e.target.value;
+
+    boxShadow.updateValue("opacity", value);
+});
+
+inset.addEventListener("input", (e) => {
+    const value = e.target.checked;
+
+    boxShadow.updateValue("inset", value);
 });
