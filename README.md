@@ -25,7 +25,8 @@ A estrutura foi pensada para separar a teoria da prática:
     * `project_imc_js`: Calculadora de IMC com manipulação de DOM.
     * `project_todoList`: Gerenciador de tarefas com persistência.
     * `project_iphone`: Estilização avançada e interatividade.
-    * *(E outros projetos em desenvolvimento...)*
+* **`03-REACT/`**: Projetos e estudos utilizando a biblioteca React (Vite).
+    * *(Iniciando novos projetos aqui 🛠️)*
 
 ---
 
@@ -34,6 +35,8 @@ A estrutura foi pensada para separar a teoria da prática:
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
   <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React">
+  <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
   <img src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
   <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
 </div>
@@ -43,6 +46,6 @@ A estrutura foi pensada para separar a teoria da prática:
 ## 🚀 Status do Progresso
 - [x] **Módulo 01:** HTML e CSS (Concluído)
 - [x] **Módulo 02:** JavaScript Básico ao Avançado (Concluído)
-- [/] **Módulo 03:** Projetos em JavaScript (Em andamento 🛠️)
-- [ ] **Módulo 04:** React JS (Próximo passo)
+- [/] **Módulo 03:** Projetos em JavaScript (Concluído ✅)
+- [ ] **Módulo 04:** React JS (Em andamento ⚛️)
 - [ ] **Módulo 05:** TypeScript com React
