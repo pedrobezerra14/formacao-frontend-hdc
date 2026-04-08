@@ -44,8 +44,8 @@ A estrutura foi pensada para separar a teoria da prática:
 ---
 
 ## 🚀 Status do Progresso
-- [x] **Módulo 01:** HTML e CSS (Concluído)
-- [x] **Módulo 02:** JavaScript Básico ao Avançado (Concluído)
-- [/] **Módulo 03:** Projetos em JavaScript (Concluído ✅)
+- [x] **Módulo 01:** HTML e CSS (Concluído ✅)
+- [x] **Módulo 02:** JavaScript Básico ao Avançado (Concluído ✅)
+- [x] **Módulo 03:** Projetos em JavaScript (Concluído ✅)
 - [ ] **Módulo 04:** React JS (Em andamento ⚛️)
 - [ ] **Módulo 05:** TypeScript com React
