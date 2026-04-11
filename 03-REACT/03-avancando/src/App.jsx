@@ -9,6 +9,12 @@ import Data from './components/Data';
 // 4 - renderização de lista
 import ListRender from './components/ListRender';
 
+// 7 - render condicional
+import ConditionalRender from './components/ConditionalRender';
+
+// 8 - props
+import ShowUserName from './components/ShowUserName';
+
 function App() {
   return (
     <div className="App" style={{paddingBottom: "500px"}}>
@@ -21,6 +27,10 @@ function App() {
       <Data />
       {/* 4 - renderização de lista */}
       <ListRender />
+      {/* 7 - condicional render */}
+      <ConditionalRender />
+      {/* 8 - props */}
+      <ShowUserName name="Pedro" />
     </div>
   )
 }
