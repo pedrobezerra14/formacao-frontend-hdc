@@ -15,6 +15,16 @@ import ConditionalRender from './components/ConditionalRender';
 // 8 - props
 import ShowUserName from './components/ShowUserName';
 
+// 9 - desestruturando props
+import CarDetails from './components/CarDetails';
+
+// 11 - renderização de listas com componente
+const cars = [
+  { id: 1, brand: "Ferrari", color: "Amarelo", km: 0 },
+  { id: 2, brand: "KIA", color: "Branco", km: 200000 },
+  { id: 3, brand: "Renault", color: "Azul", km: 32000 },
+];
+
 function App() {
   return (
     <div className="App" style={{paddingBottom: "500px"}}>
@@ -31,6 +41,15 @@ function App() {
       <ConditionalRender />
       {/* 8 - props */}
       <ShowUserName name="Pedro" />
+      {/* 9 - desestruturando props */}
+      <CarDetails brand="VW" km={900} color="Vermelho" />
+      {/* 10 - reaproveitamento de componentes */}
+      <CarDetails brand="FIAT" km={700} color="Azul" />
+      <CarDetails brand="HONDA" km={100} color="Cinza" />
+      {/* 11 - renderização de lista com componente */}
+      {cars.map((car) => (
+        <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km} />
+      ))}
     </div>
   )
 }
